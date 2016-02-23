@@ -8,6 +8,7 @@ The end user will, by default, only see a small amount of text, but can choose t
 ##Changelog
 
 ####1.0 - Initial Release
+####1.1 - Added expand/collapse JavaScript functions.
 
 ##Install
 - Import plugin file "dynamic_action_plugin_com_mbndata_plugin_large_text.sql" into your application
@@ -34,6 +35,16 @@ The plugin settings are highly customizable and you can change:
   - jQuery Selector = .large_text
   - Fire On Page Load = True
 
+## Collapse and Expand all
+To collapse or expand all, two JavaScript function are supplied:
+```js
+mbndata.expand_all('.large_text');
+or
+mbndata.collapse_all('.large_text');
+```
+
+Please use the same JQuery selector as specified in the plugin (as parameter to the JavaScript functions).
+ 
 ###Demo Application
 https://apex.oracle.com/pls/apex/f?p=42601:1
 

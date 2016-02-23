@@ -25,3 +25,11 @@ mbndata.show_less = function (i, t) {
 	  }
 	}
 }
+
+mbndata.expand_all = function(s) {
+  $(s).next().each(function(index) {mbndata.show_large(this);});	
+}
+
+mbndata.collapse_all = function(s) {
+  $(s).next().each(function(index) {mbndata.show_less(this,'Y');});
+}

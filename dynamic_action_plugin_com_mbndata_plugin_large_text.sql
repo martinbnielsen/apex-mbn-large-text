@@ -14,9 +14,9 @@ begin
 wwv_flow_api.import_begin (
  p_version_yyyy_mm_dd=>'2013.01.01'
 ,p_release=>'5.0.3.00.03'
-,p_default_workspace_id=>299106679496250286
-,p_default_application_id=>42601
-,p_default_owner=>'MBNDATA'
+,p_default_workspace_id=>1740486759639332
+,p_default_application_id=>103
+,p_default_owner=>'WORK'
 );
 end;
 /
@@ -28,7 +28,7 @@ end;
 prompt --application/shared_components/plugins/dynamic_action/com_mbndata_plugin_large_text
 begin
 wwv_flow_api.create_plugin(
- p_id=>wwv_flow_api.id(21882161824980354426)
+ p_id=>wwv_flow_api.id(7674363299284961)
 ,p_plugin_type=>'DYNAMIC ACTION'
 ,p_name=>'COM.MBNDATA.PLUGIN.LARGE_TEXT'
 ,p_display_name=>'MBN Large Text'
@@ -90,26 +90,25 @@ wwv_flow_api.create_plugin(
 ,p_substitute_attributes=>true
 ,p_subscribe_plugin_settings=>true
 ,p_version_identifier=>'1.0'
-,p_files_version=>3
+,p_files_version=>4
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(21882163551419448597)
-,p_plugin_id=>wwv_flow_api.id(21882161824980354426)
+ p_id=>wwv_flow_api.id(7676089738379132)
+,p_plugin_id=>wwv_flow_api.id(7674363299284961)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>1
 ,p_display_sequence=>10
-,p_prompt=>'Width (px)'
+,p_prompt=>'Length (px)'
 ,p_attribute_type=>'INTEGER'
 ,p_is_required=>true
 ,p_default_value=>'350'
 ,p_display_length=>4
 ,p_max_length=>4
 ,p_is_translatable=>false
-,p_help_text=>'The maximum width of the text column when collapsed.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(21882163947105450541)
-,p_plugin_id=>wwv_flow_api.id(21882161824980354426)
+ p_id=>wwv_flow_api.id(7676485424381076)
+,p_plugin_id=>wwv_flow_api.id(7674363299284961)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>2
 ,p_display_sequence=>20
@@ -120,7 +119,6 @@ wwv_flow_api.create_plugin_attribute(
 ,p_display_length=>4
 ,p_max_length=>4
 ,p_is_translatable=>false
-,p_help_text=>'The maximum height of the column when collapsed.'
 );
 end;
 /
@@ -135,14 +133,16 @@ wwv_flow_api.g_varchar2_table(6) := '7B0D0A202020202020617065782E6A5175657279286
 wwv_flow_api.g_varchar2_table(7) := '6974292E6373732822686569676874222C20617065782E6A5175657279286974292E6461746128276D626E2D6865696768742729202B2027707827293B0D0A202020202020617065782E6A5175657279286974292E63737328226F766572666C6F77222C';
 wwv_flow_api.g_varchar2_table(8) := '2268696464656E22293B0D0A202020202020617065782E6A5175657279286974292E6373732822746578742D6F766572666C6F77222C22656C6C697073697322293B0D0A0D0A0920206966202874203D3D2022592229207B0D0A20200920202020617065';
 wwv_flow_api.g_varchar2_table(9) := '782E6A51756572792869292E68746D6C282752656164206D6F72652E2E2E27293B0D0A20200920202020617065782E6A51756572792869292E6174747228276F6E636C69636B272C20276D626E646174612E73686F775F6C617267652874686973293B27';
-wwv_flow_api.g_varchar2_table(10) := '293B0D0A0920207D0D0A097D0D0A7D';
+wwv_flow_api.g_varchar2_table(10) := '293B0D0A0920207D0D0A097D0D0A7D0D0A0D0A6D626E646174612E657870616E645F616C6C203D2066756E6374696F6E287329207B0D0A2020242873292E6E65787428292E656163682866756E6374696F6E28696E64657829207B6D626E646174612E73';
+wwv_flow_api.g_varchar2_table(11) := '686F775F6C617267652874686973293B7D293B090D0A7D0D0A0D0A6D626E646174612E636F6C6C617073655F616C6C203D2066756E6374696F6E287329207B0D0A2020242873292E6E65787428292E656163682866756E6374696F6E28696E6465782920';
+wwv_flow_api.g_varchar2_table(12) := '7B6D626E646174612E73686F775F6C65737328746869732C275927293B7D293B0D0A7D0D0A';
 null;
 end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(21878897321680474370)
-,p_plugin_id=>wwv_flow_api.id(21882161824980354426)
+ p_id=>wwv_flow_api.id(2217582778201131)
+,p_plugin_id=>wwv_flow_api.id(7674363299284961)
 ,p_file_name=>'mbn_large_text.js'
 ,p_mime_type=>'application/javascript'
 ,p_file_charset=>'utf-8'
